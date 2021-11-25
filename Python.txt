@@ -1,0 +1,11 @@
+a = int(input())
+b = int(input())
+c = int(input())
+mx = max(a, b, c)
+mn = min(a, b, c)
+sr = a + b + c - mx - mn
+if mx >= sr + mn: print("Треугольник построить нельзя")
+if mx < sr + mn:
+    if mx**2 > mn**2 + sr**2: print("Тупоугольный треугольник")
+    if mx**2 < mn**2 + sr**2: print("Остроугольный треугольник")
+    if mx**2 == mn**2 + sr**2: print("Прямоугольный треугольник")
