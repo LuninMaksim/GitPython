@@ -4,8 +4,8 @@ c = int(input())
 mx = max(a, b, c)
 mn = min(a, b, c)
 sr = a + b + c - mx - mn
-if mx >= sr + mn: print("Треугольник построить нельзя")
+if mx >= sr + mn: print("eto ne treygolnik")
 if mx < sr + mn:
-    if mx**2 > mn**2 + sr**2: print("Тупоугольный треугольник")
-    if mx**2 < mn**2 + sr**2: print("Остроугольный треугольник")
-    if mx**2 == mn**2 + sr**2: print("Прямоугольный треугольник")
+    if mx**2 > mn**2 + sr**2: print("typoygolniy")
+    if mx**2 < mn**2 + sr**2: print("ostroygolniy")
+    if mx**2 == mn**2 + sr**2: print("pryamoygolniy")
